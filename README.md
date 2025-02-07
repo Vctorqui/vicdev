@@ -26,13 +26,13 @@ To install and run the project locally, follow these steps:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/vctorqui/vic-portfolio
+   git clone https://github.com/vctorqui/vicdev
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd vic-portfolio
+   cd vicdev
    ```
 
 3. Install the dependencies:
@@ -58,17 +58,6 @@ To install and run the project locally, follow these steps:
 - **SEO**: Optimize your portfolio for search engines by adding meta tags and relevant content.
 - **Performance**: Use modern web development practices to ensure optimal performance, such as lazy loading images and minimizing CSS/JS.
 - **Responsive Design**: Make sure your portfolio looks good on devices of all sizes, from mobile to desktop screens.
-<!--
-
-## Contributions
-
-Contributions are welcome! If you have ideas or improvements, please open an issue or submit a pull request. -->
-
-## License
-
-- This source codes are licensed under the [MIT License](LICENSE).
-- The content (`src/content/`) of the portfolio is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-- The images (`public/`) used in the project are for template demonstration purposes only and should not be reused without permission.
 
 ## Inspiration
 
