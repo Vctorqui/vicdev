@@ -1,0 +1,61 @@
+---
+import ContentCard from './ContentCard.astro'
+import { SquareArrowOutUpRight } from 'lucide-react'
+
+interface Props {
+  title?: string
+  body?: string
+  colSpan?: string
+  rowSpan?: string
+  href?: string
+  colorText?: string
+}
+
+const { title, body, colSpan, rowSpan, href, colorText } = Astro.props
+---
+
+<div
+  class={`card-styled ${
+    colSpan || 'md:col-span-2'
+  } ${rowSpan || ''} ${href ? 'cursor-pointer hover:border-primary' : ''}`}
+>
+  {
+    href ? (
+      <a href={href} class={`block h-full w-full ${colorText || ' '}`}>
+        <SquareArrowOutUpRight
+          className='group-hover:text-primary position absolute right-6 '
+          size={20}
+        />
+        <ContentCard title={title} body={body}>
+          <slot />
+        </ContentCard>
+      </a>
+    ) : (
+      <ContentCard title={title} body={body}>
+        <slot />
+      </ContentCard>
+    )
+  }
+</div>
+
+<style>
+  .card-styled {
+    background-color: transparent;
+    padding: 20px;
+    border: 3px solid #353434;
+    box-shadow: 4px 4px 0 #aa4a92;
+    /* border-image-source: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M3%201h1v1h-1zM4%201h1v1h-1zM2%202h1v1h-1zM5%202h1v1h-1zM1%203h1v1h-1zM6%203h1v1h-1zM1%204h1v1h-1zM6%204h1v1h-1zM2%205h1v1h-1zM5%205h1v1h-1zM3%206h1v1h-1zM4%206h1v1h-1z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E'); */
+  }
+
+  .card-styled h2 {
+    margin: 0 0 10px 0;
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+
+  .card-styled p {
+    margin: 0;
+    font-family: monospace;
+    font-size: 1em;
+  }
+</style>

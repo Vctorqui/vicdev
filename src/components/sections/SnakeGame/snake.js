@@ -54,7 +54,7 @@ const resetGame = () => {
   snakeBody = [];
   score = 0;
   updateFoodPosition();
-  scoreElement.innerText = `Score: ${score}`;
+  scoreElement.innerText = `Puntaje: ${score}`;
   setIntervalId = setInterval(initGame, 100);
 };
 
@@ -79,8 +79,8 @@ const initGame = () => {
     score++;
     highScore = score >= highScore ? score : highScore;
     localStorage.setItem("high-score", highScore);
-    scoreElement.innerText = `Score: ${score}`;
-    highScoreElement.innerText = `High Score: ${highScore}`;
+    scoreElement.innerText = `Puntaje: ${score}`;
+    highScoreElement.innerText = `Tu Record: ${highScore}`;
   }
 
   // Actualizamos la posicion de la cabeza de la serpiente basado en la velocidad actual

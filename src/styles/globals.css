@@ -29,6 +29,14 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    /* --card-custom-bg: #000;
+    --card-custom-text: #fff;
+    --card-custom-border: #fff;
+    --card-custom-shadow: #fff;
+    --bg-card: #fff;
+    --border-card: #000;
+    --text-card: #000;
+    --shadow-card: #767676; */
   }
 
   .dark {
@@ -38,7 +46,7 @@
     --card-foreground: 60 9.1% 97.8%;
     --popover: 20 14.3% 4.1%;
     --popover-foreground: 60 9.1% 97.8%;
-    --primary: 352, 82%, 65%;
+    --primary: 315, 39%, 48%;
     --primary-foreground: 60 9.1% 97.8%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
@@ -48,7 +56,7 @@
     --accent-foreground: 60 9.1% 97.8%;
     --destructive: 0 72.2% 50.6%;
     --destructive-foreground: 60 9.1% 97.8%;
-    --border: 0, 0%, 21%;
+    --border: 0 0.43% 9.79%;
     --input: 12 6.5% 15.1%;
     --ring: 20.5 90.2% 48.2%;
     --chart-1: 220 70% 50%;
@@ -74,3 +82,23 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+ /* .card-styled {
+   border-image-source: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M3%201h1v1h-1zM4%201h1v1h-1zM2%202h1v1h-1zM5%202h1v1h-1zM1%203h1v1h-1zM6%203h1v1h-1zM1%204h1v1h-1zM6%204h1v1h-1zM2%205h1v1h-1zM5%205h1v1h-1zM3%206h1v1h-1zM4%206h1v1h-1z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E"); 
+  background-color: var(--card-custom-bg, var(--bg-card, #fff));
+  border-color: var(--card-custom-border, var(--border-card, #000));
+  border-image-outset: 2;
+  border-image-repeat: stretch;
+  border-image-slice: 3;
+  border-image-width: 2;
+  border-style: solid;
+  box-shadow:
+    2px 2px 0 2px var(--card-custom-shadow, var(--shadow-card, #000)),
+    -2px -2px 0 2px var(--card-custom-bg, var(--bg-card, #fff));
+  color: var(--card-custom-text, var(--text-card, #000));
+   font-family: Minecraft, sans-serif; 
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0.5rem;
+  padding: 1px;
+}  */

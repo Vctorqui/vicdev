@@ -1,6 +1,7 @@
 {
   "site": "https://techtim42.com",
   "id": "TechTim42",
+  "type": "module",
   "name": "vic-portfolio",
   "version": "1.0.0",
   "fullName": "Tech Tim",
@@ -49,6 +50,7 @@
     "lucide-react": "^0.462.0",
     "moment-timezone": "^0.5.45",
     "motion": "^10.18.0",
+    "pixel-retroui": "^1.0.67",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-tagcloud": "^2.3.3",

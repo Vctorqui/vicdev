@@ -11,6 +11,7 @@ import StudyCard from '../components/sections/StudyCard.astro'
 import { PROFILE } from '../content/profileData'
 import BlogCard from '../components/sections/BlogCard.astro'
 import Snake from '../components/sections/SnakeGame/Snake.astro'
+import PixelCard from '../components/PixelCard.astro'
 const SITE = PROFILE.site
 ---
 
@@ -24,44 +25,44 @@ const SITE = PROFILE.site
     transition:animate='fade'
     class='relative m-auto grid w-full max-w-6xl gap-2 overflow-hidden p-2 sm:gap-2 sm:p-4 md:grid-cols-2 md:gap-3 md:p-6 lg:grid-cols-12 lg:gap-4'
   >
-    <Card
+    <PixelCard
       colSpan='lg:col-span-6 md:col-span-2'
       rowSpan='md:row-span-1 lg:row-span-2'
     >
       <IntroCard />
-    </Card>
-    <Card
+    </PixelCard>
+    <!-- <Card
       colSpan='lg:col-span-3 md:col-span-1'
       rowSpan='md:row-span-3 lg:row-span-4'
       title='Acerca de mi'
     >
       <AboutMe />
-    </Card>
+    </Card> -->
 
-    <Card
+    <!-- <Card
       colSpan='md:col-span-1 lg:col-span-3'
       rowSpan='md:row-span-2 lg:row-span-4'
       title='Snake'
     >
       <Snake />
-    </Card>
+    </Card> -->
 
-    <Card
+    <PixelCard
       colSpan='md:col-span-1 lg:col-span-3'
       rowSpan='md:row-span-2 lg:row-span-2'
       title='Experiencias'
     >
       <ExperienceCard />
-    </Card>
-    <Card
+    </PixelCard>
+    <PixelCard
       colSpan='lg:col-span-3 md:col-span-1'
       rowSpan='md:row-span-3 lg:row-span-3'
       title='Proyectos'
     >
       <Projects />
-    </Card>
+    </PixelCard>
 
-    <Card
+    <PixelCard
       colSpan='lg:col-span-3 md:col-span-1'
       rowSpan='md:row-span-1 lg:row-span-1'
     >
@@ -71,8 +72,8 @@ const SITE = PROFILE.site
         </blockquote>
         <p class='mt-2 text-xs'></p>
       </div>
-    </Card>
-    <Card
+    </PixelCard>
+    <PixelCard
       colSpan='lg:col-span-6 md:col-span-1'
       rowSpan='md:row-span-1 lg:row-span-1'
       title='Contacto'
@@ -89,29 +90,29 @@ const SITE = PROFILE.site
         >. -->
         </i>
       </div>
-    </Card>
+    </PixelCard>
 
-    <Card
+    <PixelCard
       colSpan='md:col-span-1 lg:col-span-6'
       rowSpan='md:row-span-1 lg:row-span-1'
       title='Blog Posts'
     >
       <BlogCard />
-    </Card>
-    <Card
+    </PixCard>
+    <PixelCard
       colSpan='lg:col-span-3 md:col-span-1'
       rowSpan='md:row-span-1 lg:row-span-1'
       title='Tu tiempo'
     >
       <TimeZoneCard />
-    </Card>
-    <Card
+    </PixCard>
+    <PixelCard
       colSpan='lg:col-span-3 md:col-span-1'
       rowSpan='md:row-span-1 lg:row-span-1'
       title='Mi tiempo'
     >
       <TimeZoneCard timezone={PROFILE.timezone} />
-    </Card>
+    </PixCard>
   </main>
 </BaseLayout>
 
